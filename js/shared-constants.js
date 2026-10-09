@@ -15,9 +15,16 @@ const xScale = d3.scaleLinear();
 const yScale = d3.scaleLinear();
 
 // T06-1 Step 6.2 Create a bin generator using d3.bin
+const binGenerator = d3.bin()
+    .value(d => d.energyConsumption) // Use energyConsumption for binning;
 
 // T06-1 Step 7.2 Make the filter options accessible globally
-
+const filter_screen = [
+    { id: "all", label: "ALL", isActive: true },
+    { id: "LED", label: "LED", isActive: false },
+    { id: "LCD", label: "LCD", isActive: false },
+    { id: "OLED", label: "OLED", isActive: false },
+]
 // T06-2 Step 1.4 Set up shared constant
 
 // T06-2 Step 3.3 Add tooltipWidth and tooltipHeight

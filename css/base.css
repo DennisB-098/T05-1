@@ -86,7 +86,7 @@ p {
 }
 
 /* Filters/buttons */
-#filters_screen {
+#filter_screen {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
@@ -94,7 +94,7 @@ p {
 }
 
 /* Filter buttons — use classes so we can toggle active state */
-#filters_screen .filter {
+#filter_screen .filter {
     border: none;
     background: var(--accent);
     /* dark orange by default */
@@ -107,13 +107,13 @@ p {
 }
 
 /* Active filter: pale background, dark text */
-#filters_screen .filter.active {
+#filter_screen .filter.active {
     background: #f3d9b9;
     /* pale/light orange */
     color: var(--text);
 }
 
-#filters_screen .filter:focus {
+#filter_screen .filter:focus {
     outline: 2px solid rgba(0, 0, 0, 0.08);
 }
 

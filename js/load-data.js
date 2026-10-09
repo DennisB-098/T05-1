@@ -11,9 +11,10 @@ d3.csv("data/Ex6_TVdata.csv", d => ({
     console.log(data);
 
     // T06-1 Step 4: Call functions after data is loaded
-
+    drawHistogram(data);
+    populateFilters(data);
     // T06-2 Step 1.3 Call the drawScatterplot
-    
+
     // T06-2 Step 3: Call the createTooltip() and handleMouseEvents() function
 
 }).catch(error => {
