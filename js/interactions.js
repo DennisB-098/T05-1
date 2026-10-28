@@ -43,7 +43,8 @@ const createTooltip = () => {
     // Step 3.2 Append (a hidden) tooltip to innerChart
     const tooltip = innerChartS.append("g")
         .attr("class", "tooltip")
-        .style("opacity", 0);
+        .style("opacity", 0)
+        .style("pointer-events", "none");
     // Step 3.3 Append tooltip background rectangle
     tooltip.append("rect")
         .attr("width", tooltipWidth)

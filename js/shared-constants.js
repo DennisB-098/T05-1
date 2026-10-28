@@ -34,5 +34,5 @@ const yScaleS = d3.scaleLinear();
 const colorScale = d3.scaleOrdinal();
 // T06-2 Step 3.3 Add tooltipWidth and tooltipHeight
 
-const tooltipWidth = 65; // Width of the tooltip
-const tooltipHeight = 32; // Height of the tooltip
+const tooltipWidth = 90; // Width of the tooltip
+const tooltipHeight = 30; // Height of the tooltip
